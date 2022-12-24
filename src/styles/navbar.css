@@ -8,9 +8,10 @@
 }
 
 /*Variables*/
-:root{
-    --brown:#222;
+:root {
+    --brown: #222;
     --green: #088178;
+    --peach: #cce7d0;
 }
 
 h1 {

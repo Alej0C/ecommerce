@@ -1,105 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'League Spartan', sans-serif;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/*Variables*/
+/* varibale */
 :root {
-    --brown: #222;
-    --green: #088178;
-    --peach: #cce7d0;
+    --darkBlue: #10172A;
+    --lightBlue: #4E73DF;
+    --blue: #3A55A5;
+    --black: #303030;
+    --white: #fefefe;
+    --titulo: 700;
 }
 
-h1 {
-    font-size: 50px;
-    line-height: 64px;
-    color: var(--brown);
-}
-
-h2 {
-    font-size: 46px;
-    line-height: 54px;
-    color: var(--brown);
-}
-
-h4 {
-    font-size: 20px;
-    color: var(--brown);
-}
-
-h6 {
-    font-weight: 700;
-    font-size: 12px;
-}
-
-p {
-    font-size: 16px;
-    color: #465b52;
-    margin: 15px 0 20px 0;
-}
-
-.section-p1 {
-    padding: 40px 80px;
-}
-
-.section-m1 {
-    margin: 40px 0;
-}
-
-body {
-    width: 100%;
-}
-
-/*Header*/
-#header {
+.navbar {
+    background: var(--darkBlue);
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
-    background: #e3e6f3;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    left: 0;
-}
-
-#navbar {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    padding: 20px 80px;
 }
 
-#navbar li {
-    list-style: none;
+.containItem {
+    display: flex;
+    color: var(--white);
+}
+
+.item {
     padding: 0 20px;
-    position: relative;
-}
-
-#navbar li a {
-    text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: #1a1a1a;
+    list-style: none;
+    color:#1a1a1a;
     transition: 0.3s ease;
 }
 
-#navbar li a:hover,
-#navbar li a.active {
-    color: var(--green);
+.item:hover {
+    color: #08818a;
 }
 
-#navbar li a.active::after,
-#navbar li a:hover::after {
-    content: "";
-    width: 30%;
-    height: 2px;
-    background: var(--green);
+.desplegar {
+    position: relative;
+}
+
+.list {
     position: absolute;
-    bottom: -4px;
-    left: 20px;
+    top: -300px;
+    right: 0px;
+    width: 250px;
+    height: auto;
+    background: var(--darkBlue);
+    transition: .5s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+    border-radius: 0 0 15px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.desplegar:hover .list {
+    opacity: 1;
+    top: 80px;
+    transition: .5s ease-in-out;
+}
+
+.list__item {
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--lightBlue);
+}
+
+.list__item>figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.img__item {
+    width: 50px;
+    height: 50px;
+}
+.list__item > div{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.title__item ,.parrafo__item{
+    line-height: 0;
+    font-size: 12px;
+}
+
+.list__buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.list__button {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 80%;
+    height: 40px;
+    background: var(--lightBlue);
+    border-radius: 30px;
+    color: var(--white);
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px var(--lightBlue);
+    cursor: pointer;
+}
+
+@media (max-width:700px){
+    .navbar{
+        height: 100px;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .item{
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+    }
 }

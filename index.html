@@ -5,93 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./src/styles/navbar.css">
-    <link rel="stylesheet" href="./src/styles/home.css">
-    <link rel="stylesheet" href="./src/styles/feature.css">
-    <link rel="stylesheet" href="./src/styles/product.css">
-    <title>Tienda de ropa</title>
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/section.css">
+    <link rel="stylesheet" href="./src/styles/products.css">
+    <title>Escalb Store</title>
 </head>
 
 <body>
-    <!--Navbar-->
-    <section id="header">
-        <a href="#"><img src="./public/assets/logo.png" alt="" class="logo"></a>
+    <!-- navbar -->
 
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-            </ul>
-        </div>
-    </section>
+    <nav class="navbar">
+        <figure>
+            <img src="./public/assets/logo.png" alt="">
+        </figure>
+        <ul class="containItem">
+            <li class="item">Home</li>
+            <li class="item">Blog</li>
+            <li class="item desplegar">Shop
+                <div class="list">
+                    <div class="list__buy">
+                        
+                        <div class="list__item">
+                            <figure>
+                                <img class="img__item"
+                                    src="https://themark.com.co/wp-content/uploads/2022/07/CORSAIR-CARBIDE-SPEC-OMEGA-BLANCO-1.png"
+                                    alt="">
+                            </figure>
+                            <div>
+                                <h3 class="title__item">Nombre Prodcuto</h3>
+                                <p class="parrafo__item">descripción</p>
+                            </div>
+                        </div>
 
-    <!--Hero-->
-    <section id="hero">
-        <h4>Trade-in-offer</h4>
-        <h2>Super Value Deals</h2>
-        <h1>On all products</h1>
-        <p>Save more with coupons & up to 70% off!</p>
-        <button>Shop Now</button>
-    </section>
+                        <div class="list__item">
+                            <figure>
+                                <img class="img__item"
+                                    src="https://themark.com.co/wp-content/uploads/2022/07/CORSAIR-CARBIDE-SPEC-OMEGA-BLANCO-1.png"
+                                    alt="">
+                            </figure>
+                            <div>
+                                <h3 class="title__item">Nombre Prodcuto</h3>
+                                <p class="parrafo__item">descripción</p>
+                            </div>
+                        </div>
+                        
+                        <div class="list__item">
+                            <figure>
+                                <img class="img__item"
+                                    src="https://themark.com.co/wp-content/uploads/2022/07/CORSAIR-CARBIDE-SPEC-OMEGA-BLANCO-1.png"
+                                    alt="">
+                            </figure>
+                            <div>
+                                <h3 class="title__item">Nombre Prodcuto</h3>
+                                <p class="parrafo__item">descripción</p>
+                            </div>
+                        </div>
 
-    <!--Feature-->
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="./public/assets/features/f1.png" alt="">
-            <h6>Free Shopping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="./public/assets/features/f2.png" alt="">
-            <h6>Free Shopping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="./public/assets/features/f3.png" alt="">
-            <h6>Free Shopping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="./public/assets/features/f4.png" alt="">
-            <h6>Free Shopping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="./public/assets/features/f5.png" alt="">
-            <h6>Free Shopping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="./public/assets/features/f6.png" alt="">
-            <h6>Free Shopping</h6>
-        </div>
-    </section>
-
-    <!--Products-->
-    <section id="product1" class="section-p1">
-        <h2>Featured Products</h2>
-        <p>Summer Collection New Modern Design</p>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="./public/assets/products/f1.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-ShirtS</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <div class="list__button">
+                        <button class="btn">Comprar</button>
+                    </div>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- header -->
+
+    <header class="header">
+        <div class="containText">
+            <h1 class="title">Escalab Store</h1>
+            <p class="parrafo">Venta de perifericos, equipos y mucho más.</p>
+            <a class="btnProductos" href="#">Ver Productos</a>
+        </div>
+    </header>
+
+
+    <div class="test">
+        <div id="modal" class="bgModal">
+            <div class="modal">
+                <figure id="btnClose">
+                    <img class="imgIcon" src="public/assets/iconClose.png" alt="">
+                </figure>
             </div>
         </div>
+        <button id="btnModal" class="button">Open Modal</button>
+    </div>
+
+    <section  id="products" class="products">
+        <!-- card -->
+        
+
     </section>
 
-    <script src="./src/main.js"></script>
+    <script src="src/js/main.js" type="module"></script>
+
 </body>
 
 </html>

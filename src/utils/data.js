@@ -1,32 +1,38 @@
 export const products = [
     {
         name: 'adidas',
-        price: 70,
+        description: 'Cartoon Astronaut T-Shirts',
+        price: 78,
         url: 'f1.jpg'
     },
     {
-        name: 'Microfono',
+        name: 'adidas',
+        description: 'Cartoon Astronaut T-Shirts',
         price: 70,
         url: 'f2.jpg'
     },
     {
-        name: 'Mouse Gamer',
+        name: 'adidas',
+        description: 'Cartoon Astronaut T-Shirts',
         price: 30,
         url: 'f3.jpg'
     },
     {
-        name: 'Monitor',
+        name: 'adidas',
+        description: 'Cartoon Astronaut T-Shirts',
         price: 400,
         url: 'f4.jpg'
     },
     {
-        name: 'Silla Gaming',
+        name: 'adidas',
+        description: 'Cartoon Astronaut T-Shirts',
         price: 900,
         url: 'f5.jpg'
     },
     {
-        name: 'PC Gamer',
+        name: 'adidas',
+        description: 'Cartoon Astronaut T-Shirts',
         price: 1200,
         url: 'f6.jpg'
-    }
+    },
 ]

@@ -11,7 +11,8 @@
 :root {
     --gray: #222;
     --green: #088178;
-    --black: #1a1a1a
+    --black: #1a1a1a;
+    --lgreen: #cce7d0;
 }
 
 h1 {

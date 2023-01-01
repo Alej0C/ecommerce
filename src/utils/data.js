@@ -45,6 +45,6 @@ export const products = [
         name: 'adidas',
         description: 'Cartoon Astronaut T-Shirts',
         price: 1200,
-        url: 'f7.jpg'
-    }
+        url: 'f8.jpg'
+    },
 ]

@@ -5,204 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <link rel="stylesheet" href="./src/styles/home.css">
-    <link rel="stylesheet" href="./src/styles/titles.css">
-    <link rel="stylesheet" href="./src/styles/products.css">
-    <link rel="stylesheet" href="./src/styles/banner.css">
-    <link rel="stylesheet" href="./src/styles/footer.css">
-    <link rel="stylesheet" href="./src/styles/style.css">
-    <title>Ecommerce</title>
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/navBar.css">
+    <link rel="stylesheet" href="src/css/modal.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/thank_you_page.css">
+    <title>Ecommerce Escalab</title>
 </head>
 
 <body>
-    <!--Header-->
-    <section id="header">
-        <a href="#"><img src="./public/assets/logo.png" alt=""></a>
-
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a id="lg-bag" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-            </ul>
-        </div>
-        <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
-        </div>
-    </section>
-
-    <section id="hero">
-        <h4>Trade-in-offer</h4>
-        <h2>Super Value Deals</h2>
-        <h1>On all products</h1>
-        <p>Save more with coupons & up to 70% off!</p>
-        <button>Shop now</button>
-    </section>
-
-    <section id="titles">
-        <h2>Featured Products</h2>
-        <p>Summer Collection New Morden Design</p>
-    </section>
-
-    <!--Products-->
-    <section id="products" class="section-p1">
-        <!-- card -->
-    </section>
-
-    <!--Banner-->
-    <section id="banner" class="section-m1">
-        <h4>Repair Services</h4>
-        <h2>Up to <span>70% off</span> - All t-Shirts & Accessories</h2>
-        <button class="normal">Explore More</button>
-    </section>
-
-    <section id="titles">
-        <h2>New Arrivals</h2>
-        <p>Summer Collection New Morden Design</p>
-    </section>
-
-    <!--Products-->
-    <section id="products" class="section-p1">
-        <div class="card">
-            <figure class="containImg">
-                <img src="public/products/n1.jpg" alt="" class="imgCard">
-            </figure>
-            <h2 class="nameProduct">adidas</h2>
-            <div>
-                <p class="price">$78</p>
-                <button class="buy"><i class="fa fa-shopping-cart"></i></button>
+    <div id="root"></div>
+    <!-- modal -->
+    <div id="modal" class="modal__fade">
+        <div class="modal">
+            <img id="closeModal" src="public/assets/iconClose.png" alt="" class="modal__iconClose" />
+            <div class="modal__img">
+                <img src="" alt="" class="modal__img--item" />
             </div>
-        </div>
-        <div class="card">
-            <figure class="containImg">
-                <img src="public/products/n2.jpg" alt="" class="imgCard">
-            </figure>
-            <h2 class="nameProduct">adidas</h2>
-            <div>
-                <p class="price">$78</p>
-                <button class="buy"><i class="fa fa-shopping-cart"></i></button>
-            </div>
-        </div>
-        <div class="card">
-            <figure class="containImg">
-                <img src="public/products/n3.jpg" alt="" class="imgCard">
-            </figure>
-            <h2 class="nameProduct">adidas</h2>
-            <div>
-                <p class="price">$78</p>
-                <button class="buy"><i class="fa fa-shopping-cart"></i></button>
-            </div>
-        </div>
-        <div class="card">
-            <figure class="containImg">
-                <img src="public/products/n4.jpg" alt="" class="imgCard">
-            </figure>
-            <h2 class="nameProduct">adidas</h2>
-            <div>
-                <p class="price">$78</p>
-                <button class="buy"><i class="fa fa-shopping-cart"></i></button>
-            </div>
-        </div>
-        <div class="card">
-            <figure class="containImg">
-                <img src="public/products/n5.jpg" alt="" class="imgCard">
-            </figure>
-            <h2 class="nameProduct">adidas</h2>
-            <div>
-                <p class="price">$78</p>
-                <button class="buy"><i class="fa fa-shopping-cart"></i></button>
-            </div>
-        </div>
-        <div class="card">
-            <figure class="containImg">
-                <img src="public/products/n6.jpg" alt="" class="imgCard">
-            </figure>
-            <h2 class="nameProduct">adidas</h2>
-            <div>
-                <p class="price">$78</p>
-                <button class="buy"><i class="fa fa-shopping-cart"></i></button>
-            </div>
-        </div>
-        <div class="card">
-            <figure class="containImg">
-                <img src="public/products/n7.jpg" alt="" class="imgCard">
-            </figure>
-            <h2 class="nameProduct">adidas</h2>
-            <div>
-                <p class="price">$78</p>
-                <button class="buy"><i class="fa fa-shopping-cart"></i></button>
-            </div>
-        </div>
-        <div class="card">
-            <figure class="containImg">
-                <img src="public/products/n8.jpg" alt="" class="imgCard">
-            </figure>
-            <h2 class="nameProduct">adidas</h2>
-            <div>
-                <p class="price">$78</p>
-                <button class="buy"><i class="fa fa-shopping-cart"></i></button>
-            </div>
-        </div>
-    </section>
-
-    <!--Footer-->
-    <footer class="section-p1">
-        <div class="col">
-            <img class="logo" src="./public/assets/logo.png" alt="">
-            <h4>Contact</h4>
-            <p> <strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
-            <p> <strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
-            <p> <strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
-            <div class="follow">
-                <h4>Follow us</h4>
-                <div class="icon">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-pinterest"></i>
-                    <i class="fab fa-youtube"></i>
+            <div class="modal__info">
+                <h1 class="modal__title">Descripción</h1>
+                <div>
+                    <ul>
+                        <li>Text 1</li>
+                        <li>Text 2</li>
+                        <li>Text 3</li>
+                        <li>Text 4</li>
+                    </ul>
+                </div>
+                <div class="modal__buttons">
+                    <button type="button" class="modal__comprar">
+                        Comprar
+                    </button>
+                    <button type="button" class="modal__carrito">
+                        Carrito
+                    </button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="col">
-            <h4>About</h4>
-            <a href="#">About Us</a>
-            <a href="#">Delivery Information</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
-        </div>
-
-        <div class="col">
-            <h4>My Account</h4>
-            <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track my order</a>
-            <a href="#">Help</a>
-        </div>
-
-        <div class="col install">
-            <h4>Install App</h4>
-            <p>From App Store or Google Play</p>
-            <div class="row">
-                <img src="./public/pay/app.jpg" alt="">
-                <img src="./public/pay/play.jpg" alt="">
-            </div>
-            <p>Secured Payment Gateways</p>
-            <img src="./public/pay/pay.png" alt="">
-        </div>
-
-        <div class="copyright">
-            <p>@2022, Hans Calderon - HTML CSS JS Ecommerce</p>
-        </div>
-    </footer>
-
-    <script src="src/js/mobile.js"></script>
     <script src="src/js/main.js" type="module"></script>
 
 </body>

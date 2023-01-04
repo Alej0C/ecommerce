@@ -1,6 +1,9 @@
-import { view } from "./printView.js";
+//Import hash router
+import { router } from './router/index.js';
 
-window.addEventListener('load', view);
+const principalFunction = () => {
+    location.hash = 'home';
+};
 
-
-
+window.addEventListener('load', principalFunction);
+window.addEventListener('hashchange', () => router(location.hash));

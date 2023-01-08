@@ -1,4 +1,4 @@
-const perifericos = [
+const nuevos = [
     {
         grid: 'item1',
         name: 'Astronaut T-Shirts',
@@ -37,7 +37,7 @@ const perifericos = [
     }
 ];
 
-const pc = [
+const destacados = [
     {
         grid: 'item1',
         name: 'Astronaut T-Shirts',
@@ -79,12 +79,12 @@ const pc = [
 const propsSections = [
     {
         title: 'Colección Verano Nuevo Diseño Moderno',
-        products: perifericos,
+        products: nuevos,
         target: 'periferic'
     },
     {
         title: 'Colección Verano Nuevo Diseño Moderno',
-        products: pc,
+        products: destacados,
         target: 'pc'
     }
 ];
